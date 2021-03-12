@@ -73,13 +73,16 @@ img {
 }
 
 .main-header {
-  margin-left: 73px;
-  margin-bottom: 22px;
-
+  margin-bottom: 70px;
+  
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .main-navigation {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -87,9 +90,29 @@ img {
   background-color: transparent;
 }
 
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .site-navigation {
   list-style: none;
-
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+  width: 620px;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation-current a:not([href]) {
@@ -151,25 +174,40 @@ img {
   text-align: center;
 }
 
-
+.arguments {
+  margin-top: 51px;
+  margin-bottom: 80px;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
 
 .arguments-list  {
-
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
+
 }
 
+
+.argument-item {
+  width: 400px;
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
 .element-1 {
-  background-color: var(--basic-light-blue);
-  color: var(--basic-white);
-}
 
-.element-2 {
   background-color: var(--basic-light-blue);
-  color: var(--basic-white);
 }
 
 
-
+.argument-item h2 {
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-light-blue);
+}
 
 
 .argument-item h3 {
@@ -179,22 +217,10 @@ img {
 
 
 
-.features-list  {
-
-  list-style: none;
-  background-color: var(--basic-dirty-gray);
-}
-
-
-
-
-.feature-item h3 {
-  font-size: 21px;
-  line-height: 21px;
-}
-
 
 .button {
+  margin-top: 10px;
+  margin-right: 0;
   font: inherit;
   text-align: center;
   color: var(--basic-white);
@@ -220,12 +246,16 @@ img {
 .appointment-info {
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 24px;
+  margin-top: 5px;
 }
 
 .appointment-button {
   background-color: var(--basic-light-brown);
   color: var(--basic-white);
   font-weight: 700;
+  height: 46px;
 }
 
 .appointment-button:hover {
@@ -236,14 +266,25 @@ img {
   background-color: var(--basic-dark-brown);
 }
 
+.appointment {
+  align-items: center;
+  width: 500px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+
 .appointment-item {
 
   font-weight: 700;
   color: var(--basic-black);
+  margin-top: 15px;
+  margin-bottom: 9px;
 }
 
 
 .appointment-item input {
+  width: 346px;
   font: inherit;
   color: var(--basic-black);
   background-color: var(--basic-special);
@@ -266,7 +307,7 @@ img {
   color: var(--basic-black);
   background-position: 0 0;
   background-repeat: repeat;
-
+  
 }
 
 .main-footer .container {
